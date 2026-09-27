@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card-body">
+    <form action="" method="post" onsubmit="kalkulator(event)">
+      <h1>Kalkulator Sederhana</h1>
+      <input type="number" id="angka1" placeholder="Angka pertama" />
+      <input type="number" id="angka2" placeholder="Angka kedua" /><br /><br />
+      <label for="">Pilih operasi perhitungan</label><br/>
+      <select name="operator" id="operator">
+        <option value="">Pilih operator</option>
+        <option value="+">Penjumlahan</option>
+        <option value="*">Perkalian</option>
+        <option value="-">Pengurangan</option>
+        <option value="/">Pembagian</option>
+        <option value="**">pemangkatan</option>
+        <option value="%">modulus</option>
+        <option value="Math.sqrt">Akar</option>
+      </select>
+      <button type="submit">Hitung</button>
+      <h2 id= "hasil">hasil: -</h2>
+    </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
